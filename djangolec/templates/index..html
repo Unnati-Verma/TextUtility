@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template is working</title>
+</head>
+<body>
+    <h1>This is your text analyzer. Enter your text below.</h1>
+    <form action="/analyze" method="post">{% csrf_token %}
+        <textarea name="textana" style='margin: 0px; width: 1167px; height: 108px;'></textarea><br>
+        <input type="checkbox" name="removepunc">Remove Punctuation<br>
+        <input type="checkbox" name="caps">Upper Case<br>
+        <input type="checkbox" name="newlinerem">Remove New lines<br>
+        <button type="submit">Analysis</button>
+
+    </form>
+</body>
+</html>
